@@ -17,7 +17,7 @@ fun date_to_string(date: int*int*int) =
     ^ " " ^ (Int.toString (#1 date)) ^ ", " ^ (Int.toString (#3 date));
 
 
-
+(*tests for task 7*)
 fun provided_test1 () = 
     let val date = (28, 2, 2022)
     in

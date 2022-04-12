@@ -8,6 +8,8 @@ fun number_in_month(dates: (int*int*int) list, month: int) =
         else 0)
         );
 
+
+(*tests for task 2*)
 fun provided_test1 () = 
     let val datesList = [(5,3,2025), (5,10,2025), (10,3,2013)]
         val month = 3

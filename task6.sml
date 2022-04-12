@@ -4,6 +4,8 @@ fun get_nth(strings: string list, n: int) =
     then hd strings
     else get_nth(tl strings, n-1);
 
+
+(*tests for task 6*)
 fun provided_test1 () = 
     let val list = ["str1", "str2", "str3"]
         val n = 1

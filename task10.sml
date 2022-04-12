@@ -5,6 +5,8 @@ fun month_range(day1: int, day2: int) =
     if day1<=day2 then what_month(day1) :: month_range(day1 + 1, day2)
     else [];
 
+
+(*tests for task 10*)
 fun provided_test1 () = 
     let val day1 = 25
         val day2 = 35

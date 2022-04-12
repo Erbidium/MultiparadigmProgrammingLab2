@@ -5,7 +5,7 @@ fun is_older (x: int*int*int, y: int*int*int) =
     else false;
 
 
-
+(*tests for task 1*)
 fun provided_test1 () = 
     let val date1 = (15,6,2022)
         val date2 = (21,6,2022)

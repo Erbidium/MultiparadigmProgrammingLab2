@@ -13,6 +13,8 @@ fun number_before_reaching_sum(sum: int, numbers: int list) =
         getIndexN(sum, numbers, 0)
     end;
 
+
+(*tests for task 8*)
 fun provided_test1 () = 
     let val sum = 31
         val list = [10, 10, 10, 10]
