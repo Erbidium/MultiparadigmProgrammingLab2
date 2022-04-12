@@ -13,4 +13,4 @@ fun number_before_reaching_sum(sum: int, numbers: int list) =
         getIndexN(sum, numbers, 0)
     end;
 
-val resTask8 = number_before_reaching_sum(100, [1 ,2, 3, 4, 5]);
+val resTask8 = number_before_reaching_sum(10, [1 ,2, 3, 4, 5]);
