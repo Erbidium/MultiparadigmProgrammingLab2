@@ -1,4 +1,6 @@
 (*task 3*)
+use "task2.fun";
+
 fun number_in_months(dates: (int*int*int) list, months: int list) =
     if (null months)
     then []

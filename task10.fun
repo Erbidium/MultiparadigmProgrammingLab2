@@ -1,4 +1,6 @@
 (*task 10*)
+use "task9.fun";
+
 fun month_range(day1: int, day2: int) =
     let
         fun getMonthRange(day1: int, day2: int, currentDay: int) =

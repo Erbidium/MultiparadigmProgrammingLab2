@@ -1,10 +1,5 @@
 (*task 11*)
-
-(*function from task 1*)
-fun is_older (x: int*int*int, y: int*int*int) =
-    if (#3 x) <= (#3 y) andalso (#2 x) <= (#2 y) andalso (#1 x) < (#1 y)
-    then true
-    else false;
+use "task1.fun";
 
 fun legacy(dates: (int*int*int) list) =
     let

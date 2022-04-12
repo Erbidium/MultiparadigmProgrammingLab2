@@ -1,4 +1,6 @@
 (*task 5*)
+use "task4.fun";
+
 fun dates_in_months(dates: (int*int*int) list, months: int list) =
     if (null months)
     then []
