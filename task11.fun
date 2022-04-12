@@ -19,5 +19,31 @@ fun legacy(dates: (int*int*int) list) =
         else SOME (getOldestDate((tl dates), (hd dates)))
     end;
 
-val resTask11 = legacy([(2,2,2), (3,3,3), (4,4,4), (5,5,5)]);
-val resTask11Test2 = legacy([]);
+fun provided_test1 () = 
+    let val dates = [(2,2,2), (3,3,3), (4,4,4), (5,5,5)]
+    in
+        legacy(dates)
+    end;
+
+fun provided_test2 () = 
+    let val dates = []
+    in
+        legacy(dates)
+    end;
+
+fun provided_test3 () = 
+    let val dates = [(2,2,2)]
+    in
+        legacy(dates)
+    end;
+
+fun provided_test4 () = 
+    let val dates = [(3,3,3), (3,3,3)]
+    in
+        legacy(dates)
+    end;
+
+val ans1 = provided_test1();
+val ans2 = provided_test2();
+val ans3 = provided_test3();
+val ans4 = provided_test4();
