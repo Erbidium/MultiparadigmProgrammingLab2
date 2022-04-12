@@ -2,14 +2,8 @@
 use "task9.fun";
 
 fun month_range(day1: int, day2: int) =
-    let
-        fun getMonthRange(day1: int, day2: int, currentDay: int) =
-            if(currentDay = day2)
-            then [what_month(currentDay)]
-            else [what_month(currentDay)] @ getMonthRange(day1, day2, currentDay + 1)
-    in
-        getMonthRange(day1, day2, day1)
-    end;
+    if day1<=day2 then what_month(day1) :: month_range(day1 + 1, day2)
+    else [];
 
 fun provided_test1 () = 
     let val day1 = 25
@@ -19,8 +13,8 @@ fun provided_test1 () =
     end;
 
 fun provided_test2 () = 
-    let val day1 = 1
-        val day2 = 365
+    let val day1 = 365
+        val day2 = 1
     in
         month_range(day1, day2)
     end;
