@@ -1,5 +1,5 @@
 (*task 7*)
-use "task6.fun";
+use "task6.sml";
 
 fun date_to_string(date: int*int*int) =
     get_nth(["January", 

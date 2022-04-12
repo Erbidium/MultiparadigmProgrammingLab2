@@ -1,5 +1,5 @@
 (*task 11*)
-use "task1.fun";
+use "task1.sml";
 
 fun legacy(dates: (int*int*int) list) =
     let

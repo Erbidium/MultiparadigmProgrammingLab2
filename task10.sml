@@ -1,5 +1,5 @@
 (*task 10*)
-use "task9.fun";
+use "task9.sml";
 
 fun month_range(day1: int, day2: int) =
     if day1<=day2 then what_month(day1) :: month_range(day1 + 1, day2)
