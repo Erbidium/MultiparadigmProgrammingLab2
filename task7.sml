@@ -14,30 +14,30 @@ fun date_to_string(date: int*int*int) =
     "October",
     "November",
     "December"], (#2 date))
-    ^ " " ^ (Int.toString (#1 date)) ^ ", " ^ (Int.toString (#3 date));
+    ^ " " ^ (Int.toString (#3 date)) ^ ", " ^ (Int.toString (#1 date));
 
 
 (*tests for task 7*)
 fun provided_test1 () = 
-    let val date = (28, 2, 2022)
+    let val date = (2022, 2, 28)
     in
         date_to_string(date)
     end;
 
 fun provided_test2 () = 
-    let val date = (13, 12, 1995)
+    let val date = (1995, 12, 13)
     in
         date_to_string(date)
     end;
 
 fun provided_test3 () = 
-    let val date = (17, 10, 2022)
+    let val date = (2022, 10, 17)
     in
         date_to_string(date)
     end;
 
 fun provided_test4 () = 
-    let val date = (1, 1, 2007)
+    let val date = (2007, 1, 1)
     in
         date_to_string(date)
     end;

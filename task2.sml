@@ -11,28 +11,28 @@ fun number_in_month(dates: (int*int*int) list, month: int) =
 
 (*tests for task 2*)
 fun provided_test1 () = 
-    let val datesList = [(5,3,2025), (5,10,2025), (10,3,2013)]
+    let val datesList = [(2025,3,5), (2025,10,5), (2013,3,10)]
         val month = 3
     in
         number_in_month(datesList, month)
     end;
 
 fun provided_test2 () = 
-    let val datesList = [(5,3,2025), (5,3,2025), (10,3,2013)]
+    let val datesList = [(2025,3,5), (2025,3,5), (2013,3,10)]
         val month = 6
     in
         number_in_month(datesList, month)
     end;
 
 fun provided_test3 () = 
-    let val datesList = [(7,6,2010)]
+    let val datesList = [(2010,6,7)]
         val month = 6
     in
         number_in_month(datesList, month)
     end;
 
 fun provided_test4 () = 
-    let val datesList = [(5,8,2025), (5,8,2025)]
+    let val datesList = [(2025,8,5), (2026,8,5)]
         val month = 8
     in
         number_in_month(datesList, month)

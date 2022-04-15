@@ -1,35 +1,35 @@
 (*task 1*)
 fun is_older (x: int*int*int, y: int*int*int) =
-    if (#3 x) <= (#3 y) andalso (#2 x) <= (#2 y) andalso (#1 x) < (#1 y)
+    if (#1 x) <= (#1 y) andalso (#2 x) <= (#2 y) andalso (#3 x) < (#3 y)
     then true
     else false;
 
 
 (*tests for task 1*)
 fun provided_test1 () = 
-    let val date1 = (15,6,2022)
-        val date2 = (21,6,2022)
+    let val date1 = (2022,6,15)
+        val date2 = (2022,6,21)
     in
         is_older(date1,date2)
     end;
 
 fun provided_test2 () = 
-    let val date1 = (15,6,2022)
-        val date2 = (15,5,2022)
+    let val date1 = (2022,6,15)
+        val date2 = (2022,5,15)
     in
         is_older(date1,date2)
     end;
 
 fun provided_test3 () = 
-    let val date1 = (3,3,2001)
-        val date2 = (5,10,2025)
+    let val date1 = (2001,3,3)
+        val date2 = (2025,10,5)
     in
         is_older(date1,date2)
     end;
 
 fun provided_test4 () = 
-    let val date1 = (5,10,2025)
-        val date2 = (3,3,2001)
+    let val date1 = (2025,10,5)
+        val date2 = (2001,3,3)
     in
         is_older(date1,date2)
     end;
